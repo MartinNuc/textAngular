@@ -105,9 +105,9 @@ textAngular.directive("textAngular", [
 				if(attrs.taFileDrop)				scope.fileDropHandler = scope.$parent.$eval(attrs.taFileDrop);
 				else								scope.fileDropHandler = scope.defaultFileDropHandler;
 
-				_originalContents = element[0].innerHTML;
 				// clear the original content
 				element[0].innerHTML = '';
+				_originalContents = element[0].innerHTML;
 
 				// Setup the HTML elements as variable references for use later
 				scope.displayElements = {
