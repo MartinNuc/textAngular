@@ -2043,7 +2043,7 @@ var textAngular = angular.module("textAngular", ['ngSanitize', 'textAngularSetup
 
 textAngular.config([function(){
 	// clear taTools variable. Just catches testing and any other time that this config may run multiple times...
-	angular.forEach(taTools, function(value, key){ delete taTools[key];	});
+	// angular.forEach(taTools, function(value, key){ delete taTools[key];	});
 }]);
 
 textAngular.run([function(){
