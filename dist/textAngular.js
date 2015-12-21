@@ -1471,7 +1471,11 @@ angular.module('textAngular.taBind', ['textAngular.factories', 'textAngular.DOM'
                         //console.log(text);
 						if(text && text.trim().length){
 							// test paste from word/microsoft product
+<<<<<<< HEAD
 							if(text.match(/class=["']*Mso(Normal|List)/i) || text.match(/content=["']*Word.Document/i) || text.match(/content=["']*OneNote.File/i)){
+=======
+							if(text.match(/class=["']*Mso(Normal|List)/i) || text.match(/content=["']*Word.Document/i)){
+>>>>>>> a3c82c9... edits for sanitizing font made in src and compiled
 								var textFragment = text.match(/<!--StartFragment-->([\s\S]*?)<!--EndFragment-->/i);
 								if(!textFragment) textFragment = text;
 								else textFragment = textFragment[1];
