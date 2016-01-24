@@ -2,9 +2,9 @@
 var dropFired = false;
 var textAngular = angular.module("textAngular", ['ngSanitize', 'textAngularSetup', 'textAngular.factories', 'textAngular.DOM', 'textAngular.validators', 'textAngular.taBind']); //This makes ngSanitize required
 
-textAngular.config([function(taTools){
+textAngular.config([function(){
 	// clear taTools variable. Just catches testing and any other time that this config may run multiple times...
-	if (!!taTools) {
+	if (taTools) {
 		angular.forEach(taTools, function(value, key){ delete taTools[key];	});
 	}
 }]);

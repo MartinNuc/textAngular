@@ -4,7 +4,6 @@
  * License: MIT
  */
 (function(window, angular, undefined) {'use strict';
-
 var $sanitizeMinErr = angular.$$minErr('$sanitize');
 
 /**
